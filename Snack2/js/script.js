@@ -15,7 +15,7 @@ do {
     sum < 50
 );
 
-if (sum >  50) {
+if (sum > 50) {
     userNumbers.pop()
 };
 console.log(userNumbers);

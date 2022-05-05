@@ -4,8 +4,6 @@
 // * stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
 
 const numbers = [];
-const oddNumbers = [];
-const evenNumbers = [];
 const numbersArrayLength = randomNumber();
 const oddDiv = document.getElementById('odd');
 oddDiv.style.color = 'red';
@@ -17,21 +15,9 @@ for (let i = 0; i < numbersArrayLength; i++) {
     numbers.push(newNumber)
 }
 
-console.log(numbers);
-
 numbers.forEach( element => {
-    if (element % 2 === 0) {
-        evenNumbers.push(element);
-        evenDiv.innerHTML += `${element} `;
-    } else {
-        oddNumbers.push(element)
-        oddDiv.innerHTML += `${element} `;
-    }
+    (element % 2 === 0) ? evenDiv.innerHTML += `${element} ` : oddDiv.innerHTML += `${element} `;
 });
-
-console.log(oddNumbers);
-console.log(evenNumbers);
-
 
 // FUNCTIONS
 

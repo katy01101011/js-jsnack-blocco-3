@@ -8,7 +8,7 @@
 
 // Creo la classe nuova per generare i team
 class Team {
-    constructor(nome, puntiFatti, falliSubiti) {
+    constructor(nome, puntiFatti = 0, falliSubiti = 0) {
         this.nome = nome;
         this.puntiFatti = puntiFatti;
         this.falliSubiti = falliSubiti;
@@ -23,11 +23,12 @@ class Team {
 // Creo l'array vuoto
 const footballTeams = [];
 // Genero i team
-const Juventus = new Team('Juventus', 0, 0);
-const Milan = new Team('Milan', 0, 0);
-const Inter = new Team('Inter', 0, 0);
-const Bologna = new Team('Bologna FC', 0, 0);
-const Parma = new Team('Parma', 0, 0)
+const Juventus = new Team('Juventus');
+const Milan = new Team('Milan');
+const Inter = new Team('Inter');
+const Bologna = new Team('Bologna FC');
+const Parma = new Team('Parma')
+console.log(Parma);
 // Pusho i team nell'array
 footballTeams.push(Juventus, Milan, Inter, Bologna, Parma);
 // Aggiungo i punti e i falli random
